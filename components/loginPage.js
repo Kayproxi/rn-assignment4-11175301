@@ -1,5 +1,6 @@
 import React from 'react'
-import { SafeAreaView, StyleSheet, Text, View, TextInput,Button, TouchableOpacity} from 'react-native';
+import { SafeAreaView, StyleSheet, Text, View, TextInput,Button, TouchableOpacity,Image,Link} from 'react-native';
+import Hyperlink from 'react-native-hyperlink';
 
 const Login = () => {
     return(
@@ -9,7 +10,7 @@ const Login = () => {
                   <Text style = {styles.jobizz}> Jobizz </Text>
                 </View>
                 <View>
-                  <Text style = {styles.welcome}>Welcome Back</Text>
+                  <Text style = {styles.welcome}>Welcome  Back 👋</Text>
                   <Text style ={styles.letlog}>Let's Log in. Apply to jobs!</Text>
                 </View>
            </View>
@@ -24,9 +25,18 @@ const Login = () => {
               </View>
               <View style={styles.flexes}>
                <View style={styles.horizontalRule1} />
-                <View><Text>Or Continue With</Text></View>
+                <View><Text style={styles.txtcol}>Or continue with</Text></View>
                <View style={styles.horizontalRule2} />
               </View>
+              <View style={styles.imgflex}>
+                <View><Image source={require('../cib_apple.png')}/></View>
+                <View><Image source={require('../flat-color-icons_google.png')}/></View>
+                <View><Image source={require('../ion_logo-facebook.png')}/></View>
+              </View>
+              
+              <Text style={styles.bview}>Haven't an account? <Text style={styles.blueText}>Register</Text></Text>
+              
+            
        </SafeAreaView>
     );
 }
@@ -82,7 +92,7 @@ const styles = StyleSheet.create({
       borderRadius: 5,
       marginLeft: 20,
       marginRight: 20, 
-      marginTop: 40,
+      marginTop: 25,
       height: 60,
 
     },
@@ -110,7 +120,26 @@ const styles = StyleSheet.create({
       flexDirection: 'row',
       gap: 10,
       width: 'fit-to-screen',
-      marginTop: 100,
+      marginTop: 70,
+    },
+    txtcol: {
+      color: 'rgba(13, 13, 38, 0.5)',
+    },
+    imgflex: {
+      flexDirection: 'row',
+      flexWrap: 'wrap',
+      justifyContent: 'space-evenly',
+      marginTop: 60,
+      marginLeft: 50,
+      marginRight: 50,
+    },
+    bview: {
+      marginLeft: 120,
+      marginTop: 70,
+      color: 'rgba(13, 13, 38, 0.5)',
+    },
+    blueText: {
+      color:'rgba(53, 104, 153, 1)',
     },
 
   });
