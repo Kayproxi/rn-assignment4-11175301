@@ -1,8 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react';
 import { SafeAreaView, StyleSheet, Text, View, TextInput,Button, TouchableOpacity,Image,Link} from 'react-native';
-import Hyperlink from 'react-native-hyperlink';
 
-const Login = () => {
+
+const Login = ({ navigation }) => {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+
+  const handleLogin = () => {
+    navigation.navigate('Home', {  userName: name, userEmail: email  });
+  };
+
     return(
        <SafeAreaView>
            <View style = {styles.heads}>
@@ -15,17 +22,17 @@ const Login = () => {
                 </View>
            </View>
            <View style ={styles.logins}>
-              <TextInput placeholder='Name' style ={styles.credentials} ></TextInput>
-              <TextInput placeholder='Email' style ={styles.credentials}></TextInput>
+              <TextInput placeholder='Name'  value= {name} style ={styles.credentials}  onChangeText={setName}/>
+              <TextInput placeholder='Email' value= {email} style ={styles.credentials}  onChangeText={setEmail}/>
            </View>
              <View style={styles.container}>
-                <TouchableOpacity style={styles.button} onPress={() => alert('Button pressed')}>
+                <TouchableOpacity style={styles.button} onPress={handleLogin}>
                     <Text style={styles.buttonText}>Login</Text>
                 </TouchableOpacity>
               </View>
               <View style={styles.flexes}>
                <View style={styles.horizontalRule1} />
-                <View><Text style={styles.txtcol}>Or continue with</Text></View>
+                 <View><Text style={styles.txtcol}>Or continue with</Text></View>
                <View style={styles.horizontalRule2} />
               </View>
               <View style={styles.imgflex}>

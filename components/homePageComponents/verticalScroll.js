@@ -9,6 +9,34 @@ const VerticalScroll = () =>{
          <View><Text style={styles.size2}>Popular Jobs</Text></View>
          <View><Text style={styles.size3}>See All</Text></View>
        </View>
+
+       <ScrollView>
+        <View style={styles.gparent}>
+          <View><Image source={require('./burgerking.png')}/></View>
+
+         <View style={styles.drake}>
+            <View style={styles.parent1}>
+              <View style={styles.child}><Text>Jr Executive</Text></View> 
+              <View style={styles.child1}><Text>$96000/y</Text></View>
+            </View>
+
+            <View style={styles.parent2}>
+             <View><Text style={styles.child2}>Burger King</Text></View> 
+             <View ><Text style={styles.child3}>Los Angeles, US</Text></View>
+            </View>
+          </View>
+        </View>
+        
+
+
+         <View></View>
+         <View></View>
+         <View></View>
+         <View></View>
+         <View></View>
+         <View></View>
+         <View></View>
+       </ScrollView>
     </View>
     );
 }
@@ -30,7 +58,42 @@ const styles = StyleSheet.create({
     size3: {
         color:'rgba(149, 150, 157, 1)',
         marginTop: 5
-    }
+    },
+    gparent:{
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        paddingLeft:30,
+    },
+    parent1:{ 
+        flexDirection: 'row',
+        paddingLeft:10
+    },
+    child:{
+        paddingRight: 150
+    },
+    child1:{
+        paddingLeft:10,
+      textAlign: 'right'
+    },
+    parent2:{
+        paddingTop: 20,
+        marginRight:37,
+        flexDirection:'row',
+        justifyContent: 'space-around',
+       
+    },
+    child2:{
+        color:'rgba(149, 150, 157, 1)',
+    },
+    child3:{
+      paddingLeft:120,
+      textAlign: 'right',
+      color:'rgba(149, 150, 157, 1)',
+    },
+    drake:{
+      
+    },
+
 })
 
 export default VerticalScroll;

@@ -1,18 +1,23 @@
 import React from 'react'
 import { PixelRatio, SafeAreaView, StyleSheet, Text, View , Image, TextInput, ScrollView} from 'react-native';
 import HorizontalScroll from './homePageComponents/horizontalScroll';
-const Home = () =>{
-    
+import VerticalScroll from './homePageComponents/verticalScroll';
+
+
+const Home = ({ route }) =>{
+  const { userName, userEmail } = route.params;
     return(
-    <SafeAreaView style={styles.mainView}>
+   
+      <SafeAreaView style={styles.mainView}>
+        <SafeAreaView>
        <View style={styles.flx}>
           <View flx2>
             <Text style={styles.TSize}>
-             Eric Atsu 
+             {userName}
             </Text>  
 
             <Text style={styles.size}>
-             eric@gmail.com
+             {userEmail}
             </Text>
           </View>  
             <View style={styles.imgView}><Image source={require("./Ellipse.png")} style={styles.img1}/></View>
@@ -26,14 +31,20 @@ const Home = () =>{
         <Image source={require("./filter.png")} style={styles.img2}/>
       </View>
       </View>
+      </SafeAreaView>
+
      <View style={styles.featured}>
        <View><Text style={styles.size2}> Featured Jobs</Text></View>
        <View><Text style={styles.size3}> See all</Text></View>
      </View>
      <HorizontalScroll/>
+     <VerticalScroll/>
+     
+     
     
-
     </SafeAreaView>
+   
+  
     );
 }
 
@@ -93,6 +104,7 @@ const styles = StyleSheet.create({
 
     size3: {
         color:'rgba(149, 150, 157, 1)',
+        marginTop: 3,
     },
     imgView: {
       marginLeft: 100,

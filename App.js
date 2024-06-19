@@ -7,14 +7,10 @@ import AppNavigator from './appNavigator';
 
 export default function App() {
   return (
-    
-    <ScrollView /*style={styles.container}*/>
-     
-     
-      <Home/>
-    </ScrollView>
-  );
-}
+     <AppNavigator/>
+  
+    );
+};
 
 //const styles = StyleSheet.create({
  // container: {
