@@ -5,12 +5,9 @@ import { SafeAreaView, StyleSheet, Text, View, TextInput,Button, TouchableOpacit
 const VerticalScroll = () =>{
     return(
     <View>
-       <View style={styles.featured}>
-         <View><Text style={styles.size2}>Popular Jobs</Text></View>
-         <View><Text style={styles.size3}>See All</Text></View>
-       </View>
+       
 
-      <ScrollView showsVerticalScrollIndicator={false}>
+      <ScrollView style={styles.scroll}showsVerticalScrollIndicator={false}>
         <View style={styles.gparent}>
           <View><Image source={require('./burgerking.png')}/></View>
 
@@ -150,7 +147,7 @@ const styles = StyleSheet.create({
     featured: {
         flexDirection: 'row',
         justifyContent: 'space-between',
-        marginTop: 60
+        marginTop: 50
     },
     size2: {
         fontSize: 20,
@@ -204,8 +201,8 @@ const styles = StyleSheet.create({
       color:'rgba(149, 150, 157, 1)',
       alignSelf: 'right',
     },
-    drake:{
-      
+    scroll:{
+    
     },
 
 })

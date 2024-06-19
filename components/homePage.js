@@ -7,7 +7,7 @@ import VerticalScroll from './homePageComponents/verticalScroll';
 const Home = ({ route }) =>{
   const { userName, userEmail } = route.params;
     return(
-    <ScrollView style={styles.mvc}>
+    <View style={styles.mvc}>
       <SafeAreaView style={styles.mainView}>
         <SafeAreaView>
             <View style={styles.flx}>
@@ -25,6 +25,8 @@ const Home = ({ route }) =>{
         <View>
           <TextInput style={styles.searchBox} placeholder= "Search a job or a position"/>
         </View>
+
+        
         <View>
          <Image source={require("./filter.png")} style={styles.img2}/>
         </View>
@@ -36,15 +38,22 @@ const Home = ({ route }) =>{
        <View><Text style={styles.size3}> See all</Text></View>
      </View>
      </SafeAreaView>
-     <ScrollView>
+    
      <HorizontalScroll/>
+
+     <View style={styles.featured1}>
+       <View><Text style={styles.size21}> Popular Jobs</Text></View>
+       <View><Text style={styles.size31}> See all</Text></View>
+     </View>
+     
      <VerticalScroll/>
-     </ScrollView>
+  
+      
     
     </SafeAreaView>
    
-  </ScrollView>
-    );
+  </View>
+  );
 }
 
 const styles = StyleSheet.create({
@@ -133,6 +142,23 @@ const styles = StyleSheet.create({
     mvc:{
       backgroundColor: 'white',
     },
+    featured1: {
+      flexDirection: 'row',
+      justifyContent: 'space-between',
+      marginTop: 50
+  },
+  size21: {
+      fontSize: 20,
+      fontWeight: 700,
+      fontFamily: 'Poppins',
+      lineHeight: 24,
+      marginTop: 2,
+      marginBottom: 30 
+  },
+  size31: {
+      color:'rgba(149, 150, 157, 1)',
+      marginTop: 5
+  },
 })
 
 

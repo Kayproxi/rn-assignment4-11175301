@@ -81,17 +81,17 @@ const HorizontalScroll = () => {
         <View style={styles.itm1}>
 
           <View style={styles.image}>
-            <Image source={require("./facebook.png")} style={styles.img}/>
+            <Image source={require("./microsoft.png")} style={styles.img}/>
           </View>
           <View style={styles.lol}>
-            <Text style={styles.ts1}>Software Engineer</Text>
-            <Text style={styles.ts2}>Facebook</Text>
+            <Text style={styles.ts1}>Data Analyst</Text>
+            <Text style={styles.ts2}>Microsoft</Text>
           </View>
         </View>
         
         <View style={styles.itm2}>
-          <View><Text style={styles.btext1}>$180,00</Text></View>
-          <View><Text style={styles.btext2}>Accra, Ghana</Text></View>
+          <View><Text style={styles.btext1}>$170,00</Text></View>
+          <View><Text style={styles.btext2}>Miami, USA</Text></View>
         </View>
       </View>
 
@@ -100,17 +100,17 @@ const HorizontalScroll = () => {
         <View style={styles.itm1}>
 
           <View style={styles.image}>
-            <Image source={require("./facebook.png")} style={styles.img}/>
+            <Image source={require("./apple.png")} style={styles.img}/>
           </View>
           <View style={styles.lol}>
-            <Text style={styles.ts1}>Software Engineer</Text>
-            <Text style={styles.ts2}>Facebook</Text>
+            <Text style={styles.ts1}>AI Researcher</Text>
+            <Text style={styles.ts2}>Apple</Text>
           </View>
         </View>
         
         <View style={styles.itm2}>
-          <View><Text style={styles.btext1}>$180,00</Text></View>
-          <View><Text style={styles.btext2}>Accra, Ghana</Text></View>
+          <View><Text style={styles.btext1}>$600,00</Text></View>
+          <View><Text style={styles.btext2}>Barcelona, Spain</Text></View>
         </View>
       </View>
 
@@ -118,17 +118,17 @@ const HorizontalScroll = () => {
         <View style={styles.itm1}>
 
           <View style={styles.image}>
-            <Image source={require("./facebook.png")} style={styles.img}/>
+            <Image source={require("./amazon.png")} style={styles.img}/>
           </View>
           <View style={styles.lol}>
             <Text style={styles.ts1}>Software Engineer</Text>
-            <Text style={styles.ts2}>Facebook</Text>
+            <Text style={styles.ts2}>Amazon</Text>
           </View>
         </View>
         
         <View style={styles.itm2}>
-          <View><Text style={styles.btext1}>$180,00</Text></View>
-          <View><Text style={styles.btext2}>Accra, Ghana</Text></View>
+          <View><Text style={styles.btext1}>$164,00</Text></View>
+          <View><Text style={styles.btext2}>Rome, Italy</Text></View>
         </View>
       </View>
 
@@ -136,17 +136,17 @@ const HorizontalScroll = () => {
         <View style={styles.itm1}>
 
           <View style={styles.image}>
-            <Image source={require("./facebook.png")} style={styles.img}/>
+            <Image source={require("./pinterest.png")} style={styles.img}/>
           </View>
           <View style={styles.lol}>
-            <Text style={styles.ts1}>Software Engineer</Text>
-            <Text style={styles.ts2}>Facebook</Text>
+            <Text style={styles.ts1}>UI/UX developer</Text>
+            <Text style={styles.ts2}>Pinterest</Text>
           </View>
         </View>
         
         <View style={styles.itm2}>
           <View><Text style={styles.btext1}>$180,00</Text></View>
-          <View><Text style={styles.btext2}>Accra, Ghana</Text></View>
+          <View><Text style={styles.btext2}>Canberra, Australia</Text></View>
         </View>
       </View>
 
@@ -160,7 +160,6 @@ const styles = StyleSheet.create({
         paddingTop: 30,
         fontFamily: 'Poppins',
         fontSize: 24,
-        fontWeight:600,
         color: 'white'
        },
     ts2: {
@@ -168,7 +167,6 @@ const styles = StyleSheet.create({
          paddingLeft: 1,
          fontSize: 20,
          fontFamily: 'Poppins',
-         fontWeight: 20,
          color: 'white',
          fontWeight: '200',
        },
@@ -243,7 +241,7 @@ const styles = StyleSheet.create({
       flexWrap:"wrap",
       },
     scrollItem5: {
-      backgroundColor:'rgba(4, 40, 74, 1)',
+      backgroundColor:'rgba(255, 116, 55, 1)',
       marginRight: 10,
       width: 350,
       height: 250,
@@ -251,7 +249,7 @@ const styles = StyleSheet.create({
       flexWrap:"wrap",
       },
     scrollItem6: {
-      backgroundColor:'rgba(4, 40, 74, 1)',
+      backgroundColor:'rgba(0, 0, 0, 1)',
       marginRight: 10,
       width: 350,
       height: 250,
@@ -259,7 +257,7 @@ const styles = StyleSheet.create({
       flexWrap:"wrap",
       },
     scrollItem7: {
-      backgroundColor:'rgba(4, 40, 74, 1)',
+      backgroundColor:'rgba(91, 159, 222, 1)',
       marginRight: 10,
       width: 350,
       height: 250,
@@ -267,7 +265,7 @@ const styles = StyleSheet.create({
       flexWrap:"wrap",
       },
     scrollItem8: {
-      backgroundColor:'rgba(4, 40, 74, 1)',
+      backgroundColor:'rgba(169, 12, 4, 1)',
       marginRight: 10,
       width: 350,
       height: 250,
