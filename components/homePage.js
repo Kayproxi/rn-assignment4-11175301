@@ -7,44 +7,43 @@ import VerticalScroll from './homePageComponents/verticalScroll';
 const Home = ({ route }) =>{
   const { userName, userEmail } = route.params;
     return(
-   
+    <ScrollView style={styles.mvc}>
       <SafeAreaView style={styles.mainView}>
         <SafeAreaView>
-       <View style={styles.flx}>
-          <View flx2>
-            <Text style={styles.TSize}>
-             {userName}
-            </Text>  
+            <View style={styles.flx}>
+              <View style={styles.flx2}>
+               <Text style={styles.TSize}>{userName}</Text>  
+               <Text style={styles.size}>{userEmail}</Text>
+              </View>  
 
-            <Text style={styles.size}>
-             {userEmail}
-            </Text>
-          </View>  
-            <View style={styles.imgView}><Image source={require("./Ellipse.png")} style={styles.img1}/></View>
-      </View>
+              <View style={styles.spacer} /> 
+
+               <View style={styles.imgView}><Image source={require("./Ellipse.png")} style={styles.img1}/></View>
+            </View>
       
       <View style={styles.flex2}>
-      <View>
-       <TextInput style={styles.searchBox} placeholder= "Search a job or a position"/>
+        <View>
+          <TextInput style={styles.searchBox} placeholder= "Search a job or a position"/>
+        </View>
+        <View>
+         <Image source={require("./filter.png")} style={styles.img2}/>
+        </View>
       </View>
-      <View>
-        <Image source={require("./filter.png")} style={styles.img2}/>
-      </View>
-      </View>
-      </SafeAreaView>
+      
 
      <View style={styles.featured}>
        <View><Text style={styles.size2}> Featured Jobs</Text></View>
        <View><Text style={styles.size3}> See all</Text></View>
      </View>
+     </SafeAreaView>
+     <ScrollView>
      <HorizontalScroll/>
      <VerticalScroll/>
-     
-     
+     </ScrollView>
     
     </SafeAreaView>
    
-  
+  </ScrollView>
     );
 }
 
@@ -64,7 +63,7 @@ const styles = StyleSheet.create({
         fontSize: 24,
         fontStyle: 'bold',
         fontFamily:'poppins',
-
+        paddingRight: '100',
       },
     size: {
         fontSize: 20,
@@ -75,12 +74,29 @@ const styles = StyleSheet.create({
         flex: 0,
         flexDirection:'row',
         alignItems: 'center',
-        marginRight: 100,
-        justifyContent:'space-between'
+        justifyContent:'space-around',
+        backgroundColor: 'white',
+        width: 'fit-to-screen'
+       
+    },
+    flx2: {
+     borderColor: 'black',
+     marginLeft: 55,
+     alignSelf: 'left',
+    },
+    imgView: {
+      marginLeft: 259,
+      paddingRight: 10,
+      marginRight: 50,
+      borderColor: 'black',
     },
     img1: {
-        marginLeft: 80,
+        marginLeft: 10,
+        marginRight: 0,
         marginTop: 0,
+      },
+      spacer: {
+        width: 120,
       },
     flex2: {
         flexDirection:'row',
@@ -88,6 +104,7 @@ const styles = StyleSheet.create({
     mainView: {
         marginLeft: 20,
         marginRight: 10,
+        backgroundColor: 'white'
     },
     size2: {
         fontSize: 20,
@@ -106,15 +123,15 @@ const styles = StyleSheet.create({
         color:'rgba(149, 150, 157, 1)',
         marginTop: 3,
     },
-    imgView: {
-      marginLeft: 100,
-    },
     img2: {
       marginLeft: 30,
       marginTop: 20,
       height: 55,
       width: 53,
       borderRadius: 15
+    },
+    mvc:{
+      backgroundColor: 'white',
     },
 })
 

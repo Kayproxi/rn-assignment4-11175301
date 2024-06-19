@@ -31,13 +31,13 @@ const HorizontalScroll = () => {
           </View>
           <View style={styles.lol}>
             <Text style={styles.ts1}>Software Engineer</Text>
-            <Text style={styles.ts2}>Facebook</Text>
+            <Text style={styles.ts2}>Google</Text>
           </View>
         </View>
         
         <View style={styles.itm2}>
-          <View><Text style={styles.btext1}>$180,00</Text></View>
-          <View><Text style={styles.btext2}>Accra, Ghana</Text></View>
+          <View><Text style={styles.btext1}>$200,00</Text></View>
+          <View><Text style={styles.btext2}>Nairobi, Kenya</Text></View>
         </View>
       </View>
 

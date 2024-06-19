@@ -10,7 +10,7 @@ const VerticalScroll = () =>{
          <View><Text style={styles.size3}>See All</Text></View>
        </View>
 
-       <ScrollView>
+      <ScrollView showsVerticalScrollIndicator={false}>
         <View style={styles.gparent}>
           <View><Image source={require('./burgerking.png')}/></View>
 
@@ -27,16 +27,121 @@ const VerticalScroll = () =>{
           </View>
         </View>
         
+        <View style={styles.gparent}>
+          <View><Image source={require('./burgerking.png')}/></View>
+
+         <View style={styles.drake}>
+            <View style={styles.parent1}>
+              <View style={styles.child}><Text>Jr Executive</Text></View> 
+              <View style={styles.child1}><Text>$96000/y</Text></View>
+            </View>
+
+            <View style={styles.parent2}>
+             <View><Text style={styles.child2}>Burger King</Text></View> 
+             <View ><Text style={styles.child3}>Los Angeles, US</Text></View>
+            </View>
+          </View>
+        </View>
+
+        <View style={styles.gparent}>
+          <View><Image source={require('./burgerking.png')}/></View>
+
+         <View style={styles.drake}>
+            <View style={styles.parent1}>
+              <View style={styles.child}><Text>Jr Executive</Text></View> 
+              <View style={styles.child1}><Text>$96000/y</Text></View>
+            </View>
+
+            <View style={styles.parent2}>
+             <View><Text style={styles.child2}>Burger King</Text></View> 
+             <View ><Text style={styles.child3}>Los Angeles, US</Text></View>
+            </View>
+          </View>
+        </View>
+
+        <View style={styles.gparent}>
+          <View><Image source={require('./burgerking.png')}/></View>
+
+         <View style={styles.drake}>
+            <View style={styles.parent1}>
+              <View style={styles.child}><Text>Jr Executive</Text></View> 
+              <View style={styles.child1}><Text>$96000/y</Text></View>
+            </View>
+
+            <View style={styles.parent2}>
+             <View><Text style={styles.child2}>Burger King</Text></View> 
+             <View ><Text style={styles.child3}>Los Angeles, US</Text></View>
+            </View>
+          </View>
+        </View>
+
+        <View style={styles.gparent}>
+          <View><Image source={require('./burgerking.png')}/></View>
+
+         <View style={styles.drake}>
+            <View style={styles.parent1}>
+              <View style={styles.child}><Text>Jr Executive</Text></View> 
+              <View style={styles.child1}><Text>$96000/y</Text></View>
+            </View>
+
+            <View style={styles.parent2}>
+             <View><Text style={styles.child2}>Burger King</Text></View> 
+             <View ><Text style={styles.child3}>Los Angeles, US</Text></View>
+            </View>
+          </View>
+        </View>
+
+        <View style={styles.gparent}>
+          <View><Image source={require('./burgerking.png')}/></View>
+
+         <View style={styles.drake}>
+            <View style={styles.parent1}>
+              <View style={styles.child}><Text>Jr Executive</Text></View> 
+              <View style={styles.child1}><Text>$96000/y</Text></View>
+            </View>
+
+            <View style={styles.parent2}>
+             <View><Text style={styles.child2}>Burger King</Text></View> 
+             <View ><Text style={styles.child3}>Los Angeles, US</Text></View>
+            </View>
+          </View>
+        </View>
+
+        <View style={styles.gparent}>
+          <View><Image source={require('./burgerking.png')}/></View>
+
+         <View style={styles.drake}>
+            <View style={styles.parent1}>
+              <View style={styles.child}><Text>Jr Executive</Text></View> 
+              <View style={styles.child1}><Text>$96000/y</Text></View>
+            </View>
+
+            <View style={styles.parent2}>
+             <View><Text style={styles.child2}>Burger King</Text></View> 
+             <View ><Text style={styles.child3}>Los Angeles, US</Text></View>
+            </View>
+          </View>
+        </View>
+
+        <View style={styles.gparent}>
+          <View><Image source={require('./burgerking.png')}/></View>
+
+         <View style={styles.drake}>
+            <View style={styles.parent1}>
+              <View style={styles.child}><Text>Jr Executive</Text></View> 
+              <View style={styles.child1}><Text>$96000/y</Text></View>
+            </View>
+
+            <View style={styles.parent2}>
+             <View><Text style={styles.child2}>Burger King</Text></View> 
+             <View ><Text style={styles.child3}>Los Angeles, US</Text></View>
+            </View>
+          </View>
+        </View>
 
 
-         <View></View>
-         <View></View>
-         <View></View>
-         <View></View>
-         <View></View>
-         <View></View>
-         <View></View>
-       </ScrollView>
+       
+      </ScrollView>
     </View>
     );
 }
@@ -63,6 +168,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-between',
         paddingLeft:30,
+        marginBottom: 50,
     },
     parent1:{ 
         flexDirection: 'row',

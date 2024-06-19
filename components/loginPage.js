@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { SafeAreaView, StyleSheet, Text, View, TextInput,Button, TouchableOpacity,Image,Link} from 'react-native';
+import { SafeAreaView, StyleSheet, Text, View, TextInput,Button, TouchableOpacity,Image,Link, Alert} from 'react-native';
 
 
 const Login = ({ navigation }) => {
@@ -7,7 +7,10 @@ const Login = ({ navigation }) => {
   const [email, setEmail] = useState('');
 
   const handleLogin = () => {
-    navigation.navigate('Home', {  userName: name, userEmail: email  });
+    if (name.trim() === '' || email.trim() === '') {
+      Alert.alert('Please enter both your name and email.');
+    }else{
+    navigation.navigate('Home', {  userName: name, userEmail: email  });}
   };
 
     return(
