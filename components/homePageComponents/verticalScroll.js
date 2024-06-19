@@ -28,7 +28,7 @@ const VerticalScroll = () =>{
         </View>
         
         <View style={styles.gparent}>
-          <View><Image source={require('./burgerking.png')}/></View>
+          <View><Image source={require('./image8.png')}/></View>
 
          <View style={styles.drake}>
             <View style={styles.parent1}>
@@ -37,14 +37,14 @@ const VerticalScroll = () =>{
             </View>
 
             <View style={styles.parent2}>
-             <View><Text style={styles.child2}>Burger King</Text></View> 
-             <View ><Text style={styles.child3}>Los Angeles, US</Text></View>
+             <View><Text style={styles.child2}>Beats</Text></View> 
+             <View><Text style={styles.child30}>Florida, US</Text></View>
             </View>
           </View>
         </View>
 
         <View style={styles.gparent}>
-          <View><Image source={require('./burgerking.png')}/></View>
+          <View><Image source={require('./Vector.png')}/></View>
 
          <View style={styles.drake}>
             <View style={styles.parent1}>
@@ -53,8 +53,8 @@ const VerticalScroll = () =>{
             </View>
 
             <View style={styles.parent2}>
-             <View><Text style={styles.child2}>Burger King</Text></View> 
-             <View ><Text style={styles.child3}>Los Angeles, US</Text></View>
+             <View><Text style={styles.child2}>Facebook</Text></View> 
+             <View ><Text style={styles.child3}>Florida, US</Text></View>
             </View>
           </View>
         </View>
@@ -167,7 +167,7 @@ const styles = StyleSheet.create({
     gparent:{
         flexDirection: 'row',
         justifyContent: 'space-between',
-        paddingLeft:30,
+        paddingLeft:20,
         marginBottom: 50,
     },
     parent1:{ 
@@ -195,6 +195,14 @@ const styles = StyleSheet.create({
       paddingLeft:120,
       textAlign: 'right',
       color:'rgba(149, 150, 157, 1)',
+      alignSelf: 'right',
+    },
+    child30:{
+      paddingLeft:130,
+      marginLeft: 70,
+      textAlign: 'right',
+      color:'rgba(149, 150, 157, 1)',
+      alignSelf: 'right',
     },
     drake:{
       

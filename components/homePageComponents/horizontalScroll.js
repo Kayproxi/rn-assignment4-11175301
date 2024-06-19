@@ -45,17 +45,17 @@ const HorizontalScroll = () => {
         <View style={styles.itm1}>
 
           <View style={styles.image}>
-            <Image source={require("./facebook.png")} style={styles.img}/>
+            <Image source={require("./download.png")} style={styles.img}/>
           </View>
           <View style={styles.lol}>
-            <Text style={styles.ts1}>Software Engineer</Text>
-            <Text style={styles.ts2}>Facebook</Text>
+            <Text style={styles.ts1}>Data Engineer</Text>
+            <Text style={styles.ts2}>Open AI</Text>
           </View>
         </View>
         
         <View style={styles.itm2}>
-          <View><Text style={styles.btext1}>$180,00</Text></View>
-          <View><Text style={styles.btext2}>Accra, Ghana</Text></View>
+          <View><Text style={styles.btext1}>$200,00</Text></View>
+          <View><Text style={styles.btext2}>London, England</Text></View>
         </View>
       </View>
 
@@ -63,11 +63,11 @@ const HorizontalScroll = () => {
         <View style={styles.itm1}>
 
           <View style={styles.image}>
-            <Image source={require("./facebook.png")} style={styles.img}/>
+            <Image source={require("./burgerking.png")} style={styles.img}/>
           </View>
           <View style={styles.lol}>
-            <Text style={styles.ts1}>Software Engineer</Text>
-            <Text style={styles.ts2}>Facebook</Text>
+            <Text style={styles.ts1}>Sales Manager</Text>
+            <Text style={styles.ts2}>Burger King</Text>
           </View>
         </View>
         
@@ -89,11 +89,12 @@ const HorizontalScroll = () => {
           </View>
         </View>
         
-        <View style={styles.itm}>
+        <View style={styles.itm2}>
           <View><Text style={styles.btext1}>$180,00</Text></View>
           <View><Text style={styles.btext2}>Accra, Ghana</Text></View>
         </View>
       </View>
+
 
       <View style={styles.scrollItem6}>
         <View style={styles.itm1}>
@@ -168,7 +169,8 @@ const styles = StyleSheet.create({
          fontSize: 20,
          fontFamily: 'Poppins',
          fontWeight: 20,
-         color: 'white'
+         color: 'white',
+         fontWeight: '200',
        },
     image: {
         margin: 30,
@@ -225,7 +227,7 @@ const styles = StyleSheet.create({
       flexWrap:"wrap",
       },
     scrollItem3: {
-      backgroundColor:'rgba(4, 40, 74, 1)',
+      backgroundColor:'rgba(4, 40, 10, 0.7)',
       marginRight: 10,
       width: 350,
       height: 250,
@@ -233,7 +235,7 @@ const styles = StyleSheet.create({
       flexWrap:"wrap",
       },
     scrollItem4: {
-      backgroundColor:'rgba(4, 40, 74, 1)',
+      backgroundColor:'rgba(200, 20, 20, 0.7)',
       marginRight: 10,
       width: 350,
       height: 250,
